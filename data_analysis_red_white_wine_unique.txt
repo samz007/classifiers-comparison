@@ -1,0 +1,68 @@
+done merging
+(6497, 13)
+==========================================================================
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 6497 entries, 0 to 4897
+Data columns (total 13 columns):
+color                   6497 non-null int64
+fixed acidity           6497 non-null float64
+volatile acidity        6497 non-null float64
+citric acid             6497 non-null float64
+residual sugar          6497 non-null float64
+chlorides               6497 non-null float64
+free sulfur dioxide     6497 non-null float64
+total sulfur dioxide    6497 non-null float64
+density                 6497 non-null float64
+pH                      6497 non-null float64
+sulphates               6497 non-null float64
+alcohol                 6497 non-null float64
+quality                 6497 non-null int64
+dtypes: float64(11), int64(2)
+memory usage: 710.6 KB
+None
+missing values in dataset are 
+ color                   0
+fixed acidity           0
+volatile acidity        0
+citric acid             0
+residual sugar          0
+chlorides               0
+free sulfur dioxide     0
+total sulfur dioxide    0
+density                 0
+pH                      0
+sulphates               0
+alcohol                 0
+quality                 0
+dtype: int64
+==========================================================================
+Dtype counts in given dataset: 
+float64    11
+int64       2
+dtype: int64
+Test set and training set are separated
+==========================================================================
+Analysis for classifier : RandomForestClassifier
+F1 score is 0.6784615384615384
+accuracies are [0.65244957 0.6460739  0.66820809]
+accuracy values on k-fold cross validation have mean as   0.655577 and std as  0.01
+==========================================================================
+Analysis for classifier : SVC
+F1 score is 0.5615384615384615
+accuracies are [0.56945245 0.56639723 0.56820809]
+accuracy values on k-fold cross validation have mean as   0.568019 and std as  0.0
+==========================================================================
+Analysis for classifier : DecisionTreeClassifier
+F1 score is 0.6161538461538462
+accuracies are [0.54121037 0.53983834 0.55722543]
+accuracy values on k-fold cross validation have mean as   0.546091 and std as  0.01
+==========================================================================
+Analysis for classifier : GaussianNB
+F1 score is 0.45615384615384613
+accuracies are [0.44380403 0.45842956 0.44104046]
+accuracy values on k-fold cross validation have mean as   0.447758 and std as  0.01
+==========================================================================
+Analysis for classifier : GradientBoostingClassifier
+F1 score is 0.5815384615384616
+accuracies are [0.59020173 0.56812933 0.58728324]
+accuracy values on k-fold cross validation have mean as   0.581871 and std as  0.01
