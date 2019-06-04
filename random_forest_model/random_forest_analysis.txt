@@ -1,0 +1,9 @@
+==========================================================================
+==========================================================================
+Analysis for classifier with default values : RandomForestClassifier
+F1 score is 0.686923076923077
+accuracies are [0.64092219 0.63568129 0.66358382]
+accuracy values on k-fold cross validation have mean as   0.646729 and std as  0.01
+Best accuracy obtained is 0.6526842409082163
+0.6526842409082163
+With params  {'criterion': 'entropy', 'max_features': 'sqrt', 'n_estimators': 200}

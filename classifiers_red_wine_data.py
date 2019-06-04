@@ -10,7 +10,7 @@ from xgboost import XGBClassifier
 
 # printing analysis to txt file
 orig_stdout = sys.stdout
-f = open('data_analysis_red_wine.txt', 'w')
+f = open('output_result\data_analysis_red_wine.txt', 'w')
 sys.stdout = f
 
 # Importing the dataset for red_wine

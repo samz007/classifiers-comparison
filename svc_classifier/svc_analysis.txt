@@ -1,0 +1,9 @@
+==========================================================================
+==========================================================================
+Analysis for classifier with default values : SVC
+F1 score is 0.5615384615384615
+accuracies are [0.56945245 0.56639723 0.56820809]
+accuracy values on k-fold cross validation have mean as   0.568019 and std as  0.0
+Best accuracy obtained is 0.6109293823359631
+0.6109293823359631
+With params  {'C': 10, 'gamma': 0.8, 'kernel': 'rbf'}

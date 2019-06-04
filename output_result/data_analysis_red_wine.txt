@@ -44,9 +44,9 @@ accuracies are [0.60981308 0.61971831 0.61647059]
 accuracy values on k-fold cross validation have mean as   0.615334 and std as  0.0
 ==========================================================================
 Analysis for classifier : RandomForestClassifier
-F1 score is 0.71875
-accuracies are [0.60280374 0.65492958 0.63529412]
-accuracy values on k-fold cross validation have mean as   0.631009 and std as  0.02
+F1 score is 0.709375
+accuracies are [0.61448598 0.63849765 0.64235294]
+accuracy values on k-fold cross validation have mean as   0.631779 and std as  0.01
 ==========================================================================
 Analysis for classifier : GaussianNB
 F1 score is 0.540625
@@ -54,9 +54,9 @@ accuracies are [0.53971963 0.5258216  0.51294118]
 accuracy values on k-fold cross validation have mean as   0.526161 and std as  0.01
 ==========================================================================
 Analysis for classifier : GradientBoostingClassifier
-F1 score is 0.6875
-accuracies are [0.61448598 0.62206573 0.63058824]
-accuracy values on k-fold cross validation have mean as   0.62238 and std as  0.01
+F1 score is 0.690625
+accuracies are [0.61915888 0.62910798 0.63058824]
+accuracy values on k-fold cross validation have mean as   0.626285 and std as  0.01
 ==========================================================================
 Analysis for classifier : SVC
 F1 score is 0.64375

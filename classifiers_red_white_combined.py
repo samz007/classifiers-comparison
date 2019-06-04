@@ -6,24 +6,24 @@ from sklearn.metrics import confusion_matrix, f1_score
 from sklearn.model_selection import cross_val_score
 from sklearn.svm import SVC
 import sys
+from sklearn.ensemble import GradientBoostingClassifier
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.naive_bayes import GaussianNB
 from xgboost import XGBClassifier
-
 
 # printing analysis to txt file
 orig_stdout = sys.stdout
-f = open('data_analysis_red_white_wine_unique.txt', 'w')
+f = open('output_result\data_analysis_red_white_wine_unique.txt', 'w')
 sys.stdout = f
 
 # Importing the dataset for red_wine and white wine
 dataset_red = pd.read_csv('winequality-red.csv', encoding="ISO-8859-1")
-dataset_red.insert(0, 'color', 0)
+dataset_red.insert(0, 'color', 1)
 dataset_white = pd.read_csv('winequality-white.csv', encoding="ISO-8859-1")
 dataset_white.insert(0, 'color', 0)
 
 # combning two datasets
-# dataset = pd.merge(dataset_red, dataset_white)
 dataset = pd.concat([dataset_red, dataset_white], axis=0)
-print("done merging")
 print(np.shape(dataset))
 
 print("==========================================================================")
@@ -53,19 +53,17 @@ X_train = sc.fit_transform(X_train)
 X_test = sc.transform(X_test)
 
 # fitting classifier for the training set
-# selecting classifiers from sklearn module
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.ensemble import GradientBoostingClassifier
-from sklearn.naive_bayes import GaussianNB
-from xgboost import XGBClassifier
+
 
 nb_classifier = GaussianNB()
 gb_classifier = GradientBoostingClassifier()
 rf_cassifier = RandomForestClassifier(n_estimators=100, criterion='entropy')
 svc_classifier = SVC(kernel='rbf', random_state=0, gamma='auto')
 dt_classifier = DecisionTreeClassifier(criterion='entropy', random_state=0)
+xgb_classifier = XGBClassifier()
 
-classifiers_with_default_values = [rf_cassifier, svc_classifier, dt_classifier, nb_classifier, gb_classifier]
+classifiers_with_default_values = [rf_cassifier, svc_classifier, dt_classifier, nb_classifier, gb_classifier,
+                                   xgb_classifier]
 
 for clasifier in classifiers_with_default_values:
     print("==========================================================================")
@@ -83,5 +81,5 @@ for clasifier in classifiers_with_default_values:
             round(accuracies.mean(), 6),
             round(accuracies.std(), 2)))
 
-# sys.stdout = orig_stdout
-# f.close()
+sys.stdout = orig_stdout
+f.close()
