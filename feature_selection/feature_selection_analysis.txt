@@ -1,0 +1,15 @@
+==========================================================================
+     Specs       Score
+0  alcohol  201.369195
+==========================================================================
+Analysis for classifier with default values : RandomForestClassifier
+[[  0   0   4   2   1   0   0]
+ [  0   0  21  26   1   0   0]
+ [  0   0 252 157   3   1   0]
+ [  0   0 200 328  48   3   0]
+ [  0   0  31 139  40   1   0]
+ [  0   0   4  25  11   1   0]
+ [  0   0   0   1   0   0   0]]
+F1 score is 0.47769230769230764
+accuracies are [0.51642651 0.52829099 0.52485549]
+accuracy values on k-fold cross validation have mean as   0.523191 and std as  0.0
