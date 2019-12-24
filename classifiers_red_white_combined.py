@@ -13,7 +13,7 @@ from xgboost import XGBClassifier
 
 # printing analysis to txt file
 orig_stdout = sys.stdout
-f = open('output_result\data_analysis_red_white_wine_unique.txt', 'w')
+f = open('output_result\data_analysis_red_white_wine_different.txt', 'w')
 sys.stdout = f
 
 # Importing the dataset for red_wine and white wine

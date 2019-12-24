@@ -42,9 +42,9 @@ dtype: int64
 Test set and training set are separated
 ==========================================================================
 Analysis for classifier : RandomForestClassifier
-F1 score is 0.6807692307692308
-accuracies are [0.64899135 0.62759815 0.66184971]
-accuracy values on k-fold cross validation have mean as   0.646146 and std as  0.01
+F1 score is 0.6823076923076923
+accuracies are [0.64380403 0.63394919 0.66184971]
+accuracy values on k-fold cross validation have mean as   0.646534 and std as  0.01
 ==========================================================================
 Analysis for classifier : SVC
 F1 score is 0.5615384615384615
@@ -63,8 +63,8 @@ accuracy values on k-fold cross validation have mean as   0.398846 and std as  0
 ==========================================================================
 Analysis for classifier : GradientBoostingClassifier
 F1 score is 0.5792307692307692
-accuracies are [0.58904899 0.5704388  0.59132948]
-accuracy values on k-fold cross validation have mean as   0.583606 and std as  0.01
+accuracies are [0.58904899 0.5704388  0.58439306]
+accuracy values on k-fold cross validation have mean as   0.581294 and std as  0.01
 ==========================================================================
 Analysis for classifier : XGBClassifier
 F1 score is 0.563076923076923
