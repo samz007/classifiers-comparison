@@ -9,17 +9,17 @@ import sys
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.naive_bayes import GaussianNB
-from xgboost import XGBClassifier
+from PyXGBoost import PyXGBoostClassifier
 
 # printing analysis to txt file
 orig_stdout = sys.stdout
-f = open('output_result\data_analysis_red_white_wine_different.txt', 'w')
+f = open('results\data_analysis_red_white_wine_different.txt', 'w')
 sys.stdout = f
 
 # Importing the dataset for red_wine and white wine
-dataset_red = pd.read_csv('winequality-red.csv', encoding="ISO-8859-1")
+dataset_red = pd.read_csv('../../dataset/winequality-red.csv', encoding="ISO-8859-1")
 dataset_red.insert(0, 'color', 1)
-dataset_white = pd.read_csv('winequality-white.csv', encoding="ISO-8859-1")
+dataset_white = pd.read_csv('../../dataset/winequality-white.csv', encoding="ISO-8859-1")
 dataset_white.insert(0, 'color', 0)
 
 # combning two datasets
@@ -60,7 +60,7 @@ gb_classifier = GradientBoostingClassifier()
 rf_cassifier = RandomForestClassifier(n_estimators=100, criterion='entropy')
 svc_classifier = SVC(kernel='rbf', random_state=0, gamma='auto')
 dt_classifier = DecisionTreeClassifier(criterion='entropy', random_state=0)
-xgb_classifier = XGBClassifier()
+xgb_classifier = PyXGBoostClassifier()
 
 classifiers_with_default_values = [rf_cassifier, svc_classifier, dt_classifier, nb_classifier, gb_classifier,
                                    xgb_classifier]

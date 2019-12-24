@@ -6,15 +6,15 @@ from sklearn.metrics import confusion_matrix, f1_score
 from sklearn.model_selection import cross_val_score
 from sklearn.svm import SVC
 import sys
-from xgboost import XGBClassifier
+from PyXGBoost import PyXGBoostClassifier
 
 # printing analysis to txt file
 orig_stdout = sys.stdout
-f = open('output_result\data_analysis_red_wine.txt', 'w')
+f = open('results\data_analysis_red_wine.txt', 'w')
 sys.stdout = f
 
 # Importing the dataset for red_wine
-dataset = pd.read_csv('winequality-red.csv', encoding="ISO-8859-1")
+dataset = pd.read_csv('../../dataset/winequality-red.csv', encoding="ISO-8859-1")
 print("==========================================================================")
 print(np.str(dataset.info()))
 
@@ -47,7 +47,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.naive_bayes import GaussianNB
 
-xgb_classifier = XGBClassifier()
+xgb_classifier = PyXGBoostClassifier()
 rf_cassifier = RandomForestClassifier(n_estimators=100, criterion='entropy')
 nb_classifier = GaussianNB()
 gb_classifier = GradientBoostingClassifier()

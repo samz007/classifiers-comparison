@@ -1,0 +1,8 @@
+==========================================================================
+Best features obtained with their effective contribution : 
+ 
+              Specs       Score
+3           alcohol  201.369195
+0  volatile acidity   42.528980
+1         chlorides    6.388650
+==========================================================================

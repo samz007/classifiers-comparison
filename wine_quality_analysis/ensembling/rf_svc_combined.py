@@ -9,7 +9,6 @@ import sys
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.naive_bayes import GaussianNB
-from xgboost import XGBClassifier
 
 np.set_printoptions(threshold=sys.maxsize)
 # printing analysis to txt file
@@ -18,9 +17,9 @@ f = open("rf_svc_combined_analysis.txt", 'w')
 sys.stdout = f
 
 # Importing the dataset for red_wine and white wine
-dataset_red = pd.read_csv('..\winequality-red.csv', encoding="ISO-8859-1")
+dataset_red = pd.read_csv('../../dataset/winequality-red.csv', encoding="ISO-8859-1")
 dataset_red.insert(0, 'color', 1)
-dataset_white = pd.read_csv('..\winequality-white.csv', encoding="ISO-8859-1")
+dataset_white = pd.read_csv('../../dataset/winequality-white.csv', encoding="ISO-8859-1")
 dataset_white.insert(0, 'color', 0)
 
 # combning two datasets

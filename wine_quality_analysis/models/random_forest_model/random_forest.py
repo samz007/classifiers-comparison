@@ -9,7 +9,7 @@ import sys
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.naive_bayes import GaussianNB
-from xgboost import XGBClassifier
+from PyXGBoost import PyXGBoostClassifier
 np.set_printoptions(threshold=sys.maxsize)
 # printing analysis to txt file
 orig_stdout = sys.stdout

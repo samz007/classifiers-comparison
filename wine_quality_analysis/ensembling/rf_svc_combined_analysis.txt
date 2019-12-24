@@ -20,15 +20,15 @@ Analysis for classifier with default values : SVC
  [   0    0    0    0    0    0    4]]
 F1 score is 0.9911487396574947
 ==========================================================================
-(413,)
+(423,)
 confusion matrix for combination is :
-[[  0   0   2   5   0   0   0]
- [  1   8  30   9   0   0   0]
- [  0   7 298 106   2   0   0]
- [  0   4  88 451  35   1   0]
- [  0   0   5  93 113   0   0]
- [  0   0   0  16   8  17   0]
+[[  0   0   3   4   0   0   0]
+ [  0   6  31  11   0   0   0]
+ [  0   3 293 115   2   0   0]
+ [  0   4  83 453  35   4   0]
+ [  0   0   7  92 107   5   0]
+ [  0   0   0  16   7  18   0]
  [  0   0   0   1   0   0   0]]
-F1 score for combined is 0.6823076923076923
-accuracies for combined model are [1.         1.         0.99884393]
-accuracy values on k-fold cross validation have mean as   0.999615 and std as  0.0
+F1 score for combined is 0.6746153846153846
+accuracies for combined model are [1.         1.         0.99942263]
+accuracy values on k-fold cross validation have mean as   0.999808 and std as  0.0
