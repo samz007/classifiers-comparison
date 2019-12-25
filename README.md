@@ -2,8 +2,8 @@
 
 **Overview**
 
-This project is focused at analyzing the labelled data of wine quality and building a prediction model for quality of the wine. The repository contains several components such as 
-data preprocessing, models, ensembling, model selection that can be clubbed together to form overall prediction algorithm.
+This project is focused on analyzing the labeled data of wine quality and building a prediction model for the quality of the wine. The repository contains several components such as 
+data preprocessing, models, ensembling, a model selection that can be clubbed together to form the overall prediction algorithm.
 
 
 
@@ -11,8 +11,8 @@ data preprocessing, models, ensembling, model selection that can be clubbed toge
 **Data**
 
 The wine quality dataset can be obtained at [UCI repository](https://archive.ics.uci.edu/ml/datasets/Wine+Quality).
-The wine dataset is available in form of two csv files viz., winequality-red.csv and winequality-white.csv. To begin with store these files under dataset directory. 
-To build a larger dataset, these two datasets can be combined by adding an extra feature representing the color of the wine.
+The wine dataset is available in the form of two CSV files viz., 'winequality-red.csv' and 'winequality-white.csv.' To begin with, store these files under the dataset directory. 
+To have a larger dataset, the above two data files can be combined by adding an extra feature representing the color of the wine.
 
 
 
