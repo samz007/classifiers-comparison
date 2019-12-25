@@ -21,3 +21,10 @@ To have a larger dataset, the above two data files can be combined by adding an 
 **Workflow**
 
 ![alt text](https://github.com/samz007/classifiers-comparison/blob/master/architectural_view.png)
+
+
+
+**References**
+
+* Published paper: https://www.sciencedirect.com/science/article/pii/S0167923609001377?via%3Dihub
+* ML best practices: https://algorithmia.com/blog/best-practices-in-machine-learning-infrastructure
