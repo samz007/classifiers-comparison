@@ -1,15 +1,16 @@
+import sys
+
 import numpy as np
 import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.metrics import confusion_matrix, f1_score
-from sklearn.model_selection import cross_val_score
-from sklearn.svm import SVC
-import sys
+from PyXGBoost import PyXGBoostClassifier
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import confusion_matrix, f1_score
+from sklearn.model_selection import cross_val_score
+from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import GaussianNB
-from PyXGBoost import PyXGBoostClassifier
+from sklearn.svm import SVC
+from sklearn.tree import DecisionTreeClassifier
 
 # printing analysis to txt file
 orig_stdout = sys.stdout

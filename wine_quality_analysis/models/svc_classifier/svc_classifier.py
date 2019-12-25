@@ -1,15 +1,11 @@
+import sys
+
 import numpy as np
 import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import confusion_matrix, f1_score
 from sklearn.model_selection import cross_val_score
+from sklearn.model_selection import train_test_split
 from sklearn.svm import SVC
-import sys
-from sklearn.ensemble import GradientBoostingClassifier
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.naive_bayes import GaussianNB
-from xgboost import XGBClassifier
 
 # printing analysis to txt file
 orig_stdout = sys.stdout
@@ -27,7 +23,7 @@ dataset = pd.concat([dataset_red, dataset_white], axis=0)
 print("==========================================================================")
 
 # splitting dataset into features and classifier-output
-X = dataset.iloc[:, [0, 2,5, 8, 11]].values
+X = dataset.iloc[:, [0, 2, 5, 8, 11]].values
 y = dataset.iloc[:, -1].values
 
 # splitting data-set into training set and test set
@@ -41,7 +37,7 @@ X_train = sc.fit_transform(X_train)
 X_test = sc.transform(X_test)
 
 # fitting classifier for the training set
-classifier = SVC(C =  10, gamma = 0.8, kernel = 'rbf', random_state=0)
+classifier = SVC(C=10, gamma=0.8, kernel='rbf', random_state=0)
 
 print("==========================================================================")
 print("Analysis for classifier with default values : {}".format(np.str(classifier).split('(')[0]))
